@@ -1,0 +1,26 @@
+{
+    "name": "resume-jason",
+    "version": "1.0.0",
+    "description": "My Professional Resume",
+    "main": "resume.json",
+    "scripts": {
+        "validate": "resume validate",
+        "export": "mkdir -p dist && resume export --theme elegant dist/index.html"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/UGNS/resume-json"
+    },
+    "keywords": [
+        "resume"
+    ],
+    "author": "Jeremy T. Bouse <Jeremy.Bouse@UnderGrid.net>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/UGNS/resume-json/issues"
+    },
+    "homepage": "https://github.com/UGNS/resume-json#readme",
+    "dependencies": {
+        "jsonresume-theme-elegant": "^1.14.0"
+    }
+}

@@ -1,0 +1,22 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: latest
+    commands:
+      - echo Installing resume-cli...
+      - npm install -g resume-cli
+  pre_build:
+    commands:
+      - echo Installing source dependencies...
+      - npm install
+      - echo Validating JSON...
+      - npm run validate
+  build:
+    commands:
+      - npm run export
+artifacts:
+  files:
+    - '**/*'
+  base-directory: dist
